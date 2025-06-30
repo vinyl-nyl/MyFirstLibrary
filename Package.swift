@@ -1,6 +1,8 @@
 // swift-tools-version: 6.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
+// 패키지 메니페스트 파일: 패키지에 대해서 설명하는 파일, 패키지 구성 파일
+
 import PackageDescription
 
 let package = Package(

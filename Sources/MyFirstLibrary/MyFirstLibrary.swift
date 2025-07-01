@@ -19,9 +19,14 @@ public struct Person {
 // 익스텐션은 기본적으로 확장하는 타입의 access level을 따라감
 // 단, 자동으로 부여되는 access level은 internal보다 높아질 수 있음
 public extension Date {
+    // extension에 추가한 멤버의 access level은 extension을 그대로 따라간다
     var year: Int {
         return Calendar.current.component(.year, from: Date())
     }
+}
+
+public enum Language {
+    case swift // case는 열거형을 따라감
 }
 
 //public struct Point {
